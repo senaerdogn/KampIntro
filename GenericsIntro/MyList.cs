@@ -18,7 +18,16 @@ namespace GenericsIntro
         {
             T[] tempArray = items;
             items = new T[items.Length + 1]; //dizinin eleman sayısını 1 arttırdık
+        }
 
+        public int Length
+        {
+            get { return items.Length; }
+        }
+
+        public T[] Items
+        {
+            get { return items; }
         }
     }
 }

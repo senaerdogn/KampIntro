@@ -7,7 +7,7 @@ namespace GenericsYoutube
         static void Main(string[] args)
         {
             MyList<string> myList = new MyList<string>();
-            Console.WriteLine(myList.Count);
+            Console.WriteLine(myList.Count);       //0
             myList.Add("Ankara");
             myList.Add("İstanbul");
             myList.Add("İzmir");
@@ -24,7 +24,7 @@ namespace GenericsYoutube
         T[] _array;
         T[] _tempArray;
 
-        //new'lediğimiz an constructor çalışacak ve eleman sayısı 0 olan bir array oluştu.
+        //new'lediğimiz an constructor çalışacak ve eleman sayısı 0 olan bir array oluşacak.
         public MyList()
         {
             _array = new T[0];
